@@ -1,0 +1,106 @@
+@charset "utf-8";
+body {
+  background: url(../img/bg.jpg) -324px -630px !important;
+}
+.top_box {
+  margin: auto;
+  width: 1200px;
+  overflow: hidden;
+}
+.hard {
+  margin: auto;
+  height: 85px;
+}
+.logo {
+  float: left;
+  width: 115px;
+  height: 75px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.hard .m {
+  position: relative;
+  left: 50%;
+  top: 15px;
+}
+.hard ul {
+  width: 500px;
+  top: 15px;
+  margin-right: -20px;
+  height: 50px;
+  position: absolute;
+  overflow: hidden;
+}
+#flash0 {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.hard li {
+  float: left;
+  margin: 0px 10px;
+}
+.hard li a {
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 65px;
+  height: 45px;
+  line-height: 45px;
+  float: left;
+  text-align: center;
+  transition: all 0.25s ease;
+  background: #fff;
+  color: #D0104C;
+}
+.hard li a:hover {
+  background-color: #D0104C;
+  color: #fff;
+}
+.content {
+  margin: auto;
+  margin-top: 30px;
+}
+.ctbg {
+  background: url(../img/abbg2.jpg) no-repeat center;
+  height: 713px;
+  width: 1600;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 25px;
+}
+.ctbg .box {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  height: 613px;
+  padding: 50px 0;
+  color: #FFF;
+}
+.ctbg .box h3 {
+  height: 55px;
+  margin-bottom: 15px;
+}
+.ctbg .box p {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 75px;
+  height: 75px;
+}
+.red {
+  margin: 0 auto;
+  height: 50px;
+  background-color: #ff9900;
+  width: 100px;
+}
+.return {
+  position: fixed;
+  right: 10%;
+  bottom: 25px;
+  width: 30px;
+  height: 70px;
+  background: url(../img/return.png);
+  display: none;
+}
