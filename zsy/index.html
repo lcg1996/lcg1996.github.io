@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="applicable-device" content="pc,mobile"/>
+        <title>首页</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script type="text/javascript" src="js/jQuery1.7.2.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/modernizr.custom.97074.js"></script>
+        <script type="text/javascript" src="js/jquery.hoverdir.js"></script>    
+        <script type="text/javascript">
+            $(function() {
+            
+                $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".animate:eq(0)").animate({"opacity":"1","margin-top":"0"},speed);
+                $(".animate:eq(1)").animate({"opacity":"1","margin-top":"0"},speed);               
+            });            
+              var speed = 2300;
+            $(window).scroll(function(event) {
+              var aaa = $(window).scrollTop();
+              if( aaa >=500 ){
+                $(".animate:eq(2)").animate({"opacity":"1","margin-top":"0"},speed);                     
+              }
+              if( aaa >=700 ){
+                $(".animate:eq(3)").animate({"opacity":"1"},speed);                     
+              } 
+              if( aaa >=900 ){
+                $(".animate:eq(4)").animate({"opacity":"1","margin-top":"0"},speed);                     
+              }                      
+            });
+        </script>
+        <script type="text/javascript">  
+            $(function(){  
+              
+            var imglist =document.getElementsByTagName("img");
+            //安卓4.0+等高版本不支持window.screen.width，安卓2.3.3系统支持  
+            /* 
+            var _width = window.screen.width; 
+            var _height = window.screen.height - 20; 
+             
+            var _width = document.body.clientWidth; 
+            var _height = document.body.clientHeight - 20; 
+            */  
+            var _width,   
+                _height;      
+            doDraw();  
+              
+            window.onresize = function(){  
+                doDraw();  
+            }  
+              
+            function doDraw(){  
+                _width = window.innerWidth - 0;  
+                _height = window.innerHeight - 0;  
+                for( var i = 0, len = imglist.length; i < len; i++){  
+                    DrawImage(imglist[i],_width,_height);  
+                }  
+            }
+
+            function DrawImage(ImgD,_width,_height){   
+                var image=new Image();   
+                image.src=ImgD.src;   
+                image.onload = function(){  
+                    if(image.width>30 && image.height>30 && window.innerWidth < 1200) {   
+                   
+                        if(image.width/image.height>= _width/_height){   
+                            if(image.width>_width){  
+                                ImgD.width=_width;   
+                                ImgD.height=(image.height*_width)/image.width;   
+                            }else{   
+                                ImgD.width=image.width;   
+                                ImgD.height=image.height;   
+                            }   
+                        }else{   
+                            if(image.height>_height){  
+                                ImgD.height=_height;   
+                                ImgD.width=(image.width*_height)/image.height;   
+                            }else{   
+                                ImgD.width=image.width;   
+                                ImgD.height=image.height;   
+                            }   
+                        }  
+                    }     
+                }  
+              
+            }  
+                 
+            })  
+        </script>  
+    </head>
+    <body>
+        <!-- 头部+banner -->
+
+        <div class="header m_botm">
+            <div class="header_box">
+                <div class="logo box"><h1>Meghna<span>.</span></h1></div>
+                <div class="menu box"><a class="button" href="javascript:void(0)"><i></i><br><i></i></a></div>
+                <span class="arrow"></span>
+                <div class="nav box">
+                    <ul>
+                        <li><a href="javascript:void(0);">HOME</a></li>
+                        <li><a href="javascript:void(0);">About&nbsp;Us</a></li>
+                        <li><a href="javascript:void(0);">Services</a></li>
+                        <li><a href="javascript:void(0);">Portfolio</a></li>
+                        <li><a href="javascript:void(0);">Team</a></li>
+                        <li><a href="javascript:void(0);">Pricing</a></li>
+                        <li><a href="javascript:void(0);">Blog</a></li>
+                        <li><a href="javascript:void(0);">Contact</a></li>
+                    </ul>
+                </div>    
+                <div class="banner box animate">
+                    <h3 class="banner_style">Collect&nbsp;from&nbsp;企业网站模板About Us</h3>
+                    <a class="banner_style" href="javascript:void(0);">We're Creative</a>
+                </div>
+            </div>
+        </div>
+        <!-- 内容列表 -->
+
+        <div class="content m_botm">
+            <div class="list_content content_box">
+                <ul id="da-thumbs" class="da-thumbs animate">
+                    <li>
+                        <a class="pr_a" href="javascript:;"><img src="img/portx1.jpg" width="365" height="270" alt="">
+                            <div class="disk"><h3>标题</h3><span>XXXXXXXXXXXXXXXXXX</span></div>
+                        </a>    
+                    </li>
+                    <li>
+                        <a class="pr_a" href="javascript:;"><img src="img/portx1.jpg" width="365" height="270" alt="">
+                            <div class="disk"><h3>标题</h3><span>XXXXXXXXXXXXXXXXXX</span></div>
+                        </a>    
+                    </li>
+                    <li>
+                        <a class="pr_a" href="javascript:;"><img src="img/portx1.jpg" width="365" height="270" alt="">
+                            <div class="disk"><h3>标题</h3><span>XXXXXXXXXXXXXXXXXX</span></div>
+                        </a>    
+                    </li>
+                    <li>
+                        <a class="pr_a" href="javascript:;"><img src="img/portx1.jpg" width="365" height="270" alt="">
+                            <div class="disk"><h3>标题</h3><span>XXXXXXXXXXXXXXXXXX</span></div>
+                        </a>    
+                    </li>
+                    <li>
+                        <a class="pr_a" href="javascript:;"><img src="img/portx1.jpg" width="365" height="270" alt="">
+                            <div class="disk"><h3>标题</h3><span>XXXXXXXXXXXXXXXXXX</span></div>
+                        </a>    
+                    </li>
+                    <li>
+                        <a class="pr_a" href="javascript:;"><img src="img/portx1.jpg" width="365" height="270" alt="">
+                            <div class="disk"><h3>标题</h3><span>XXXXXXXXXXXXXXXXXX</span></div>
+                        </a>    
+                    </li>
+                </ul>
+            </div>
+<!-- 热点板块 -->
+            <div class="hot content_box animate">
+                <ul>
+                    <li class="show">
+                       <img src="img/hot_img1.jpg" width="315" height="200" alt="">
+                       <i>One</i>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, </p>                   
+                    </li>
+                    <li>
+                       <img src="img/hot_img2.jpg" width="315" height="200" alt="">
+                       <i>Two</i>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, </p>                   
+                    </li>
+                    <li>
+                       <img src="img/hot_img3.jpg" width="315" height="200" alt="">
+                       <i>Three</i>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, </p>                   
+                    </li>
+                    <li>
+                       <img src="img/hot_img4.jpg" width="315" height="200" alt="">
+                       <i>Three</i>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, </p>                   
+                    </li>
+                    <li>
+                       <img src="img/hot_img5.jpg" width="315" height="200" alt="">
+                       <i>Three</i>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, </p>                   
+                    </li>                                       
+                </ul>                 
+            </div>
+<!-- 滚动广告板块 -->
+            <div class="scroll content_box animate">
+                       <!--  <a class="pre btn" href="javascript:void(0)"></a> -->
+                        <ul>
+                            <li class="show">
+                               <i>One</i>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>                   
+                            </li>
+                            <li>
+                               <i>Two</i>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>                   
+                            </li>
+                            <li>
+                               <i>Three</i>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>                   
+                            </li>                                        
+                        </ul>        
+          <!--               <a class="next btn" href="javascript:void(0)"></a>  --> 
+                        <div class="page">
+                            <a href="javascript:void(0)"></a>
+                            <a href="javascript:void(0)"></a>
+                            <a href="javascript:void(0)"></a>
+                        </div>             
+            </div>
+        </div>
+
+        <!-- 底部 -->
+<div class="footer animate">
+    <ul>
+        <li>
+            <p class="fx left_p">
+      <a class="sina" href="javascript:window.open('http://v.t.sina.com.cn/share/share.php?appkey=1961588658&url='+encodeURIComponent('[url]')+'&pic='+encodeURIComponent('')+'&title='+encodeURIComponent('[content]'),'_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes'); void 0"></a>
+      <!-- 新浪微博 -->
+      <script type="text/javascript">
+          (function(){
+          var p = {
+          url:location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
+          desc:'', /*分享理由(风格应模拟用户对话),支持多分享语随机展现（使用|分隔）*/
+          title:'', /*分享标题(可选)*/
+          summary:'', /*分享摘要(可选)*/
+          pics:'', /*分享图片(可选)*/
+          flash: '', /*视频地址(可选)*/
+          site:'', /*分享来源(可选) 如：QQ分享*/
+          style:'203',
+          width:16,
+          height:21
+          };
+          var s = [];
+          for(var i in p){
+          s.push(i + '=' + encodeURIComponent(p[i]||''));
+          }
+          document.write(['<a class="qcShareqqDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank"></a>'].join(''));
+          })();
+      </script>
+      <!-- QQ -->      
+      <script type="text/javascript">
+          (function(){
+          var p = {
+          url:location.href,
+          showcount:'0',/*是否显示分享总数,显示：'1'，不显示：'0' */
+          desc:'',/*默认分享理由(可选)*/
+          summary:'',/*分享摘要(可选)*/
+          title:'',/*分享标题(可选)*/
+          site:'',/*分享来源 如：腾讯网(可选)*/
+          pics:'', /*分享图片的路径(可选)*/
+          style:'203',
+          width:22,
+          height:22
+          };
+          var s = [];
+          for(var i in p){
+          s.push(i + '=' + encodeURIComponent(p[i]||''));
+          }
+          document.write(['<a version="1.0" class="qzopenerDiv" href="http://sns.qzone.qq.com/cpre-bin/qzshare/cgi_qzshare_onekey?',s.join('&'),'" target="_blank"></a>'].join(''));
+          })();
+      </script>
+      <!-- QQ空间 --> 
+      
+      <!-- 微信平台分享 -->
+    </p>
+    <br />
+            <p class="bt_text left_p">Copyright © 2015-2016 橙果网络, All Rights &Reserved</p>
+        </li>
+        <li class="phone">
+            <img src="img/bt_pt.png" alt="">
+            <p>地址：XXXXXXXXXXXXXX</p>
+            <p>企业邮箱：xxxxxxxxxxxxxxxxxxxxx</p>
+        </li>
+        <li class="right">
+            <div class="logo-2"><img src="img/t.jpg" width="100" height="110" alt=""></div>
+        </li>
+    </ul>
+</div>
+
+    </body>
+</html>

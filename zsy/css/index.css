@@ -1,0 +1,867 @@
+body {
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  overflow-x: hidden;
+}
+.header {
+  width: 100%;
+  text-align: center;
+  background-color: #98D1E4;
+  transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  /* Internet Explorer */
+  -moz-transform: skew(-20deg);
+  /* Firefox */
+  -webkit-transform: skew(-20deg);
+  /* Safari 和 Chrome */
+  -o-transform: skew(-20deg);
+  /* Opera */
+}
+.header .header_box {
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.header .header_box .box {
+  position: absolute;
+  top: 5%;
+  display: inline-block;
+  transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  /* Internet Explorer */
+  -moz-transform: skew(20deg);
+  /* Firefox */
+  -webkit-transform: skew(20deg);
+  /* Safari 和 Chrome */
+  -o-transform: skew(20deg);
+  /* Opera */
+}
+.header .header_box .box a {
+  transition: width 1s;
+  -moz-transition: width 1s;
+  /* Firefox 4 */
+  -webkit-transition: width 1s;
+  /* Safari and Chrome */
+  -o-transition: width 1s;
+  /* Opera */
+}
+.header .header_box .logo {
+  left: 0px;
+  width: 115px;
+  height: 45px;
+  margin-left: 15px;
+  display: inline;
+}
+.header .header_box .logo h1 {
+  float: left;
+  font-size: 24px;
+  color: #fff;
+  font-style: italic;
+}
+.header .header_box .logo h1 span {
+  color: red;
+  float: right;
+}
+.header .header_box .menu {
+  right: 9.5%;
+  top: 11px;
+}
+.header .header_box .menu .button {
+  width: 50px;
+  height: 40px;
+  background-color: #98D1E4;
+  border-radius: 5px;
+  border: #fff 3px solid;
+  display: none;
+}
+.header .header_box .menu .button i {
+  width: 50px;
+  height: 3px;
+  margin: 0px auto;
+  padding: 0px;
+  overflow: hidden;
+  display: inline-block;
+  background-color: #fff;
+}
+.header .header_box .arrow {
+  display: none;
+  position: absolute;
+  right: 16%;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+.header .header_box .nav {
+  left: 15%;
+}
+.header .header_box .nav ul {
+  margin-right: -15px;
+  border-width: 0px 1px 3px;
+  border-color: #98D1E4;
+  border-style: solid;
+}
+.header .header_box .nav ul li {
+  float: left;
+  margin: 0px 15px;
+}
+.header .header_box .nav ul li a {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 15px;
+  color: #438192;
+  display: inline-block;
+  text-align: center;
+}
+.header .header_box .nav ul li a:hover {
+  color: #fff;
+  background-color: #F86942;
+}
+.header .header_box .banner {
+  left: 33%;
+  top: 45%;
+  width: 450px;
+  text-align: center;
+}
+.header .header_box .banner .banner_style {
+  color: #fff;
+  text-align: center;
+}
+.header .header_box .banner h3 {
+  font-size: 26px;
+  margin-bottom: 35px;
+}
+.header .header_box .banner a {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.header .header_box .banner a:hover {
+  width: 200px;
+  background-color: #F86942;
+  border: 3px solid;
+}
+.content {
+  width: 100%;
+  text-align: center;
+}
+.content .content_box {
+  width: 60%;
+  margin: 15px auto;
+  position: relative;
+  clear: both;
+}
+.content .list_content {
+  margin: 0 auto;
+}
+.content .list_content ul li {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #ccc;
+}
+.content .list_content ul li .pr_a {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.content .list_content ul li .pr_a:hover img {
+  -webkit-transform: scale(1.5) rotate(10deg);
+  -moz-transform: scale(1.5) rotate(10deg);
+  -o-transform: scale(1.5) rotate(10deg);
+}
+.content .list_content ul li .pr_a img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+.content .list_content ul li .pr_a .disk {
+  position: absolute;
+  z-index: 2;
+  background: rgba(75, 75, 75, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: -100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.content .list_content ul li .pr_a .disk h3 {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  margin-top: 15px;
+}
+.content .list_content ul li .pr_a .disk span {
+  font-size: 16px;
+  display: block;
+  padding: 10px 0;
+  margin: 30px 20px 20px 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
+}
+.content .hot ul {
+  margin-right: -3%;
+  width: 103%;
+}
+.content .hot ul li {
+  float: left;
+  width: 27.5%;
+  margin-bottom: 15px;
+  margin-right: 3%;
+  margin-left: 2%;
+}
+.content .hot ul li i,
+.content .hot ul li p {
+  text-align: center;
+}
+.content .scroll {
+  height: 190px;
+  color: #fff;
+}
+.content .scroll ul {
+  margin: 0 auto;
+  height: 125px;
+}
+.content .scroll li {
+  display: none;
+}
+.content .scroll i {
+  text-align: center;
+  font-size: 20px;
+  color: #de5930;
+}
+.content .scroll p {
+  width: 670px;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-indent: 2em;
+  color: #453530;
+}
+.content .scroll .page {
+  width: 136px;
+  height: 24px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.content .scroll .page a {
+  background: url(../img/g-4-icon.png) 0px -118px no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  display: inline-block;
+}
+.content .scroll .page a:hover {
+  background: url(../img/g-4-icon.png) 0px -79px no-repeat;
+}
+.footer {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding-top: 35px;
+  clear: both;
+  position: relative;
+  background-color: #191e24;
+  height: 135px;
+}
+.footer ul {
+  width: 1050px;
+  margin: 0 auto;
+}
+.footer ul li {
+  float: left;
+  width: 435px;
+  height: 135px;
+  overflow: hidden;
+}
+.footer ul li .logo-2 {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+.footer ul li .left_p {
+  display: inline-block;
+  float: left;
+  font-size: 15px;
+  margin-top: 7px;
+}
+.footer ul li .bt_text {
+  width: 435px;
+  height: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.footer ul li span {
+  float: left;
+  text-align: right;
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+}
+.footer ul li a {
+  margin-right: 20px;
+  width: 139px;
+  float: left;
+  text-align: right;
+  color: #B3B3B3;
+}
+.footer ul li a:hover {
+  color: #ff9900;
+}
+.footer ul li .fx {
+  width: 255px;
+  height: 64px;
+  float: left;
+}
+.footer ul .phone {
+  float: left;
+  margin-left: 145px;
+  width: 300px;
+}
+.footer ul .phone p {
+  float: right;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 14px;
+  color: #fff;
+}
+.footer ul .right {
+  float: right;
+  width: 154px;
+  height: 130px;
+}
+.sina {
+  background-image: url(../img/logo_bt.png);
+  width: 64px !important;
+  height: 64px;
+  float: left;
+}
+.sina:hover {
+  background-position: 0px -358px;
+}
+.qcShareqqDiv {
+  background-image: url(../img/logo_bt.png);
+  width: 64px !important;
+  height: 64px;
+  float: left;
+  background-position: 0px -119px;
+}
+.qcShareqqDiv:hover {
+  background-position: 0px -478px;
+}
+.qzopenerDiv {
+  background-image: url(../img/logo_bt.png);
+  width: 64px !important;
+  height: 64px;
+  float: left;
+  background-position: 0px -239px;
+}
+.qzopenerDiv:hover {
+  background-position: 0px -596px;
+}
+.m_botm {
+  margin-bottom: 25px;
+}
+.show {
+  display: block !important;
+}
+.animate {
+  opacity: 0;
+  margin-top: -35px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .header {
+    position: relative;
+    z-index: 3;
+    transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    /* Internet Explorer */
+    -moz-transform: skew(0deg);
+    /* Firefox */
+    -webkit-transform: skew(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: skew(0deg);
+    /* Opera */
+  }
+  .header .header_box {
+    width: 100%;
+    height: 67px;
+  }
+  .header .header_box .box {
+    transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    /* Internet Explorer */
+    -moz-transform: skew(0deg);
+    /* Firefox */
+    -webkit-transform: skew(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: skew(0deg);
+    /* Opera */
+  }
+  .header .header_box .logo {
+    left: 10px;
+    top: 23%;
+  }
+  .header .header_box .menu .button {
+    display: block;
+  }
+  .header .header_box .nav {
+    width: 90px;
+    display: none;
+  }
+  .header .header_box .nav ul {
+    width: 90px;
+    height: 320px;
+    background: rgba(208, 16, 76, 0.5);
+  }
+  .header .header_box .nav ul li {
+    margin: 0 auto;
+  }
+  .header .header_box .nav ul li a {
+    border-radius: 0px;
+    width: 90px;
+    color: #fff;
+  }
+  .header .header_box .nav ul li a:hover {
+    color: #d0104c !important;
+    background-color: #fff;
+  }
+  .header .header_box .banner {
+    display: none;
+  }
+  .content .content_box {
+    width: 100%;
+  }
+  .content .hot ul {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .content .hot ul li {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+  .content .scroll ul {
+    height: 100px;
+  }
+  .content .scroll ul li {
+    padding-top: 15px;
+  }
+  .content .scroll ul p {
+    margin-top: 10px;
+    width: 310px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 0em;
+  }
+  .content .scroll .page a {
+    zoom: 0.6;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+  .header {
+    position: relative;
+    z-index: 3;
+    transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    /* Internet Explorer */
+    -moz-transform: skew(0deg);
+    /* Firefox */
+    -webkit-transform: skew(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: skew(0deg);
+    /* Opera */
+  }
+  .header .header_box {
+    width: 100%;
+    height: 67px;
+  }
+  .header .header_box .box {
+    transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    /* Internet Explorer */
+    -moz-transform: skew(0deg);
+    /* Firefox */
+    -webkit-transform: skew(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: skew(0deg);
+    /* Opera */
+  }
+  .header .header_box .logo {
+    left: 10px;
+    top: 23%;
+  }
+  .header .header_box .menu .button {
+    display: block;
+  }
+  .header .header_box .nav {
+    width: 90px;
+    display: none;
+  }
+  .header .header_box .nav ul {
+    width: 90px;
+    height: 320px;
+    background: rgba(208, 16, 76, 0.5);
+  }
+  .header .header_box .nav ul li {
+    margin: 0 auto;
+  }
+  .header .header_box .nav ul li a {
+    border-radius: 0px;
+    width: 90px;
+    color: #fff;
+  }
+  .header .header_box .nav ul li a:hover {
+    color: #d0104c !important;
+    background-color: #fff;
+  }
+  .header .header_box .banner {
+    display: none;
+  }
+  .content .content_box {
+    width: 100%;
+  }
+  .content .hot ul {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .content .hot ul li {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+  .content .scroll ul {
+    height: 100px;
+  }
+  .content .scroll ul li {
+    padding-top: 15px;
+  }
+  .content .scroll ul p {
+    margin-top: 10px;
+    width: 310px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 0em;
+  }
+  .content .scroll .page a {
+    zoom: 0.6;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .header {
+    position: relative;
+    z-index: 3;
+    transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    /* Internet Explorer */
+    -moz-transform: skew(0deg);
+    /* Firefox */
+    -webkit-transform: skew(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: skew(0deg);
+    /* Opera */
+  }
+  .header .header_box {
+    width: 100%;
+    height: 67px;
+  }
+  .header .header_box .box {
+    transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    /* Internet Explorer */
+    -moz-transform: skew(0deg);
+    /* Firefox */
+    -webkit-transform: skew(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: skew(0deg);
+    /* Opera */
+  }
+  .header .header_box .logo {
+    left: 10px;
+    top: 23%;
+  }
+  .header .header_box .menu .button {
+    display: block;
+  }
+  .header .header_box .nav {
+    width: 90px;
+    display: none;
+  }
+  .header .header_box .nav ul {
+    width: 90px;
+    height: 320px;
+    background: rgba(208, 16, 76, 0.5);
+  }
+  .header .header_box .nav ul li {
+    margin: 0 auto;
+  }
+  .header .header_box .nav ul li a {
+    border-radius: 0px;
+    width: 90px;
+    color: #fff;
+  }
+  .header .header_box .nav ul li a:hover {
+    color: #d0104c !important;
+    background-color: #fff;
+  }
+  .header .header_box .banner {
+    display: none;
+  }
+  .content .content_box {
+    width: 100%;
+  }
+  .content .hot ul {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .content .hot ul li {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+  .content .scroll ul {
+    height: 100px;
+  }
+  .content .scroll ul li {
+    padding-top: 15px;
+  }
+  .content .scroll ul p {
+    margin-top: 10px;
+    width: 310px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 0em;
+  }
+  .content .scroll .page a {
+    zoom: 0.6;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    position: relative;
+    z-index: 3;
+    transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    /* Internet Explorer */
+    -moz-transform: skew(0deg);
+    /* Firefox */
+    -webkit-transform: skew(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: skew(0deg);
+    /* Opera */
+  }
+  .header .header_box {
+    width: 100%;
+    height: 67px;
+  }
+  .header .header_box .box {
+    transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    /* Internet Explorer */
+    -moz-transform: skew(0deg);
+    /* Firefox */
+    -webkit-transform: skew(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: skew(0deg);
+    /* Opera */
+  }
+  .header .header_box .logo {
+    left: 10px;
+    top: 23%;
+  }
+  .header .header_box .menu .button {
+    display: block;
+  }
+  .header .header_box .nav {
+    width: 90px;
+    display: none;
+  }
+  .header .header_box .nav ul {
+    width: 90px;
+    height: 320px;
+    background: rgba(208, 16, 76, 0.5);
+  }
+  .header .header_box .nav ul li {
+    margin: 0 auto;
+  }
+  .header .header_box .nav ul li a {
+    border-radius: 0px;
+    width: 90px;
+    color: #fff;
+  }
+  .header .header_box .nav ul li a:hover {
+    color: #d0104c !important;
+    background-color: #fff;
+  }
+  .header .header_box .banner {
+    display: none;
+  }
+  .content .content_box {
+    width: 100%;
+  }
+  .content .list_content ul {
+    width: 991px;
+    margin: 0 auto;
+  }
+  .content .hot ul {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .content .hot ul li {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+  .content .scroll ul {
+    height: 100px;
+  }
+  .content .scroll ul li {
+    padding-top: 15px;
+  }
+  .content .scroll ul p {
+    margin-top: 10px;
+    width: 310px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 0em;
+  }
+  .content .scroll .page a {
+    zoom: 0.6;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .header {
+    position: relative;
+    z-index: 3;
+    transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    /* Internet Explorer */
+    -moz-transform: skew(0deg);
+    /* Firefox */
+    -webkit-transform: skew(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: skew(0deg);
+    /* Opera */
+  }
+  .header .header_box {
+    width: 100%;
+    height: 67px;
+  }
+  .header .header_box .box {
+    transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    /* Internet Explorer */
+    -moz-transform: skew(0deg);
+    /* Firefox */
+    -webkit-transform: skew(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: skew(0deg);
+    /* Opera */
+  }
+  .header .header_box .logo {
+    left: 10px;
+    top: 23%;
+  }
+  .header .header_box .menu .button {
+    display: block;
+  }
+  .header .header_box .nav {
+    width: 90px;
+    display: none;
+  }
+  .header .header_box .nav ul {
+    width: 90px;
+    height: 320px;
+    background: rgba(208, 16, 76, 0.5);
+  }
+  .header .header_box .nav ul li {
+    margin: 0 auto;
+  }
+  .header .header_box .nav ul li a {
+    border-radius: 0px;
+    width: 90px;
+    color: #fff;
+  }
+  .header .header_box .nav ul li a:hover {
+    color: #d0104c !important;
+    background-color: #fff;
+  }
+  .header .header_box .banner {
+    display: none;
+  }
+  .content .content_box {
+    width: 100%;
+  }
+  .content .list_content ul {
+    width: 991px;
+    margin: 0 auto;
+  }
+  .content .hot ul {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .content .hot ul li {
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 2%;
+  }
+  .content .scroll ul {
+    height: 100px;
+  }
+  .content .scroll ul li {
+    padding-top: 15px;
+  }
+  .content .scroll ul p {
+    margin-top: 10px;
+    width: 310px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 0em;
+  }
+  .content .scroll .page a {
+    zoom: 0.6;
+  }
+  .footer {
+    display: none;
+  }
+}
