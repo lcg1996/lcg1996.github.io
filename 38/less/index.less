@@ -1,0 +1,175 @@
+body{font-family: "\5fae\8f6f\96c5\9ed1"; background-color: #ffcded;}
+
+// 主体部分
+
+.g-ct{
+     width: 100%; margin: 0 auto;
+     .banner{ 
+        margin-bottom: 40px;
+        img{width: 100%;}
+     }
+     .list{
+      width: 720px; height: 2129px; margin: 0 auto; background: url(../img/ul_bg.png) center no-repeat;
+      ul{
+        width: 100%; padding: 0px 40px;
+        .one{
+          .left{
+            float: left;            
+          }
+          .right{
+            float: right;            
+          }
+        }
+        .two{
+          .left{
+            float: right;            
+          }
+          .right{
+            float: left;            
+          }
+        }
+        li{
+          float: left; width: 635px; height: 272px; margin-bottom: 80px;
+          .text{
+               color: #fff; font-size: 22px;            
+          }          
+          .right{
+            width: 324px; height: 272px; text-align: center;
+            h2{
+              font-weight: bold;
+            }
+            a{
+              display: inline-block; margin-bottom: 2px;
+            }
+            em{
+              display: inline-block; margin: 5px auto; font-size: 24px; border-top: 1px solid #fff; border-bottom: 1px solid #fff; height: 45px; line-height: 45px;
+            }
+            .bt{
+               float: left; height: 36px; background: url(../img/bt_bg.png) no-repeat; font-size: 22px; font-weight: bold; text-align: center;  line-height: 33px; color: #fff;
+            }
+            .bt_bg{
+              width: 305px; margin: 0 auto;
+            }
+            .bt_left{
+              width: 103px; background-position: 0px 0px; margin-right: 25px; margin-left: 5px;
+            }
+            .bt_right{
+              width: 195px; margin-right: -25px; background-position: 0px -78px;
+            }
+          }
+        }
+      }
+     }
+}
+
+
+// 320*480
+@media screen and (min-width: 320px) and (max-width: 480px) {
+.g-ct{
+     .banner{
+      zoom: 0.4;
+     }
+     .list{
+      width: 285px; height: 1150px;
+      ul{
+        padding: 0px 5px;
+          .left{
+         zoom: 0.4; margin-top: 45px;            
+          }
+        li{
+           width: 285px; height: 175px; margin-bottom: 20px;
+          .text{
+               font-size: 12px;            
+          }          
+          .right{
+            width: 165px; height: 108px;
+            em{
+               font-size: 12px; height: 25px; line-height: 25px;
+            }
+            .bt{
+               font-size: 12px;
+            }
+            .bt_bg{
+              width: 305px; margin: 0 auto; zoom: 0.48;
+            }
+            .bt_right{
+              width: 200px; margin-right: -30px;
+            }
+          }
+        }
+      }
+     }
+} 
+}
+
+// 480*800
+@media screen and (min-width: 480px) and (max-width: 640px) {
+.g-ct{
+     .banner{
+      zoom: 0.59;
+     }
+     .list{
+      width: 415px; height: 1150px;
+      ul{
+        padding: 0px 5px;        
+          .left{
+         zoom: 0.7; margin-top: 0px;            
+          }
+        li{
+           width: 415px; height: 215px; margin-bottom: 40px;
+          .text{
+               font-size: 15px;           
+          }          
+          .right{
+            width: 220px;
+            em{
+               font-size: 15px;  height: 25px; line-height: 25px;
+            }
+            .bt{
+               font-size: 15px;
+            }
+            .bt_bg{
+              zoom: 0.59;
+            }
+          }
+        }
+      }
+     }
+}  
+}
+
+// 640*960
+ @media screen and (min-width: 640px) and (max-width: 720px) {
+.g-ct{
+     .banner{
+      zoom: 0.79;
+     }
+     .list{
+      width: 535px; height: 950px;
+      ul{
+         padding: 0px 15px;
+          .left{
+         zoom: 0.85;           
+          }
+        li{
+           width: 535px; margin-bottom: 35px;
+          .text{
+               font-size: 20px;           
+          }          
+          .right{
+            width: 300px;
+            em{
+               font-size: 20px; height: 25px; line-height: 25px;
+            }
+            .bt{
+               font-size: 20px;
+            }
+            .bt_bg{
+              zoom: 0.79;
+            }
+          }
+        }
+      }
+     }
+}    
+} 
